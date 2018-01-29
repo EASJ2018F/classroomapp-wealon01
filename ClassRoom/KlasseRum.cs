@@ -14,14 +14,25 @@ namespace ClassRoom
         private DateTime _semesterStart;
         private List<Studerende> _klasseListe;
 
-
-
-
-
-        public KlasseRum()
+        public string KlasseNavn
         {
-            
+            get { return _klasseNavn; }
+            set { value = _klasseNavn; }
         }
+
+        public DateTime SemesterStart
+        {
+            get { return _semesterStart; }
+            set { value = _semesterStart; }
+        }
+
+             public List<Studerende> KlasseListe
+        {
+            get { return _klasseListe; }
+            set { value = _klasseListe; }
+        }
+
+
 
 
 

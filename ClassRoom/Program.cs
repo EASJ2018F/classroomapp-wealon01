@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,14 +12,32 @@ namespace ClassRoom
         static void Main(string[] args)
         {
 
-            KlasseRum Kr= new KlasseRum();
+            KlasseRum kr= new KlasseRum();
 
-            Kr.KlasseNavn = "3A";
-            Kr.SemesterStart = new DateTime(28-8-2017);
+            Studerende hassan= new Studerende("Hassan", 07, 09);
+            Studerende nikolaj = new Studerende("Nikolaj", 02, 01);
+            Studerende kasper = new Studerende("Kasper", 01, 02);
 
-            Studerende Hassan= new Studerende("Hassan", 07, 09);
-            Studerende Nikolaj = new Studerende("Nikolaj", 02, 01);
-            Studerende Kasper = new Studerende("Kasper", 01, 02);
+
+            kr.SemesterStart = DateTime.Parse("28-8-2017");
+            kr.KlasseNavn = "3A";
+
+            List<Studerende> elever = new List<Studerende>();
+            elever.Add(hassan);
+            elever.Add(nikolaj);
+            elever.Add(kasper);
+
+            foreach (var studerende in elever)
+            {
+                Console.WriteLine(elever);
+            }
+
+            Console.WriteLine(hassan.findårstid());
+
+
+            Console.ReadKey();
+
+
 
 
 

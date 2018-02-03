@@ -29,10 +29,10 @@ namespace ClassRoom
 
             foreach (var studerende in elever)
             {
-                Console.WriteLine(elever);
+                Console.WriteLine(studerende);
             }
 
-            Console.WriteLine(hassan.findårstid());
+         
 
 
             Console.ReadKey();

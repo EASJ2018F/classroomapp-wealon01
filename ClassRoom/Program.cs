@@ -12,7 +12,6 @@ namespace ClassRoom
     {
         static void Main(string[] args)
         {
-
             KlasseRum kr= new KlasseRum();
         
             Studerende hassan= new Studerende("Hassan", 7, 09);
@@ -26,12 +25,13 @@ namespace ClassRoom
             kr.SemesterStart = DateTime.Parse("28-8-2017");
             kr.KlasseNavn = "3A";
 
+            Console.WriteLine(kr.KlasseNavn);
+            Console.WriteLine(kr.SemesterStart);
 
             foreach (var studerende in kr._klasseListe)
             {
                 Console.WriteLine(studerende);
             }
-
 
             var vinter = (from Studerende in kr._klasseListe
                 where Studerende.Fødselsmåned == 1||Studerende.Fødselsmåned==2||Studerende.Fødselsmåned==3

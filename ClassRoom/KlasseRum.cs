@@ -38,15 +38,6 @@ namespace ClassRoom
             get { return _klasseListe; }
             set { _klasseListe=value; }
         }
-
         
-
-
-
-        public override string ToString()
-        {
-            return $"{KlasseNavn} {SemesterStart} {KlasseListe}";
-        }
-    
     }
 }

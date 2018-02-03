@@ -13,8 +13,13 @@ namespace ClassRoom
         
         private string _klasseNavn;
         private DateTime _semesterStart;
-        private List<Studerende> _klasseListe;
+        public List<Studerende> _klasseListe;
 
+
+        public KlasseRum()
+        {
+            _klasseListe = new List<Studerende>();
+        }
 
         public string KlasseNavn
         {

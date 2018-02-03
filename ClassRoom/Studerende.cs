@@ -72,10 +72,7 @@ namespace ClassRoom
             return Årstid;
         }
 
-
-
-
-
+        
         public override string ToString()
         {
             return $"Navn: {Navn} Fødselsdag: {Fødselsdag} Fødselsmåned: {Fødselsmåned} Årstid: {findårstid()}";
